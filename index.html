@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT'S ALWAYS YOU</title>
+  <link rel="stylesheet" href="Webpage.css">
 
   <style>
     /* ==============================
@@ -13,9 +14,10 @@
       margin: 0;
       padding: 0;
       font-family: 'Arial', Helvetica, sans-serif;
-      background: linear-gradient(to bottom right, #ffabc7, #ff85da); /* Pink gradient */
+      background: linear-gradient(to bottom right, #ffabc7, #ff85da);
       color: #000;
       line-height: 1.6;
+      overflow-x: hidden; /* prevents side scrolling */
     }
 
     /* ==============================
@@ -84,7 +86,6 @@
       color: #333;
     }
 
-    /* Optional: italic highlight for letter's emotion */
     .pattern-description em {
       color: #f566ca;
       font-style: italic;
@@ -103,6 +104,48 @@
       font-size: 14px;
       color: #333;
     }
+
+    /* ==============================
+       📱 MOBILE RESPONSIVE
+    ============================== */
+    @media (max-width: 600px) {
+
+      .header {
+        font-size: 1.8rem;
+        padding: 15px;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .menu a {
+        display: block;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .pattern-description {
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 15px;
+      }
+
+      .box {
+        margin-bottom: 20px;
+        padding: 0 10px;
+      }
+
+      .footer {
+        font-size: 12px;
+        padding: 20px;
+      }
+    }
+
   </style>
 </head>
 
@@ -115,11 +158,11 @@
 
   <!-- NAVIGATION MENU -->
   <nav class="menu">
-    <a href="musiclyrics.html">Musiclyrics</a>
-    <a href="cutiepie.html">Gallery</a>
+    <a href="Musiclyrics.html">Musiclyrics</a>
+    <a href="Cutiepie.html">Gallery</a>
     <a href="letter.html">Letter</a>
-    <a href="love1.html">HEART</a>
-    <a href="scan-me.html">SCAN ME</a>
+    <a href="love1.html">💙</a>
+    <a href="SCAN ME.HTML">SCAN ME</a>
   </nav>
 
   <!-- LETTER / TEXT -->
@@ -132,6 +175,7 @@
   <!-- FOOTER -->
   <div class="footer">
     &copy; WLW
+  </div>
 
 </body>
 </html>
