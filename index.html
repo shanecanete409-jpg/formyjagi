@@ -17,7 +17,7 @@
       background: linear-gradient(to bottom right, #ffabc7, #ff85da);
       color: #000;
       line-height: 1.6;
-      overflow-x: hidden;
+      overflow-x: hidden; /* prevents side scrolling */
     }
 
     /* ==============================
@@ -106,43 +106,43 @@
     }
 
     /* ==============================
-       📱 MOBILE (DIKIT-DIKIT MENU)
+       📱 MOBILE RESPONSIVE
     ============================== */
     @media (max-width: 600px) {
 
       .header {
-        font-size: 1.6rem;
-        padding: 12px;
+        font-size: 1.8rem;
+        padding: 15px;
       }
 
       .menu {
         flex-direction: column;
-        gap: 3px; /* mas dikit */
-        padding: 8px 0;
+        gap: 8px;
+        padding: 8px;
       }
 
       .menu a {
         display: block;
-        width: 90%;
-        margin: 2px auto;
+        width: 50%;
+        margin: auto;
         text-align: center;
-        font-size: 0.95rem;
-        padding: 6px 10px;
+        font-size: 1rem;
       }
 
       .pattern-description {
-        padding: 18px;
-        font-size: 15px;
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 15px;
       }
 
       .box {
-        margin-bottom: 15px;
-        padding: 0 8px;
+        margin-bottom: 18px;
+        padding: 0 10px;
       }
 
       .footer {
-        font-size: 11px;
-        padding: 15px;
+        font-size: 12px;
+        padding: 20px;
       }
     }
 
