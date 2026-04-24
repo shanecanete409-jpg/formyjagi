@@ -1,98 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Lyrics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT'S ALWAYS YOU</title>
+  <link rel="stylesheet" href="Webpage.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #c3fdff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+  <style>
+    /* ==============================
+       PAGE BACKGROUND
+    ============================== */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', Helvetica, sans-serif;
+      background: linear-gradient(to bottom right, #ffabc7, #ff85da);
+      color: #000;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: rgb(248, 224, 242);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
+    /* ==============================
+       HEADER
+    ============================== */
+    .header {
+      text-align: center;
+      padding: 25px 0;
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
 
-        img {
-            width: 250px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
+    /* ==============================
+       NAVIGATION MENU
+    ============================== */
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 0 0 15px 15px;
+      margin-bottom: 30px;
+    }
 
-        audio {
-            margin: 15px 0;
-            width: 100%;
-        }
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 8px 15px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
 
-        .lyrics {
-            white-space: pre-line;
-            font-size: 16px;
-        }
-    </style>
+    .menu a:hover {
+      background: #fff;
+      color: #cf8fbc;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    /* ==============================
+       LETTER / TEXT BOX
+    ============================== */
+    .box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .pattern-description {
+      max-width: 700px;
+      width: 90%;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      padding: 40px;
+      font-size: 18px;
+      line-height: 1.9;
+      text-align: justify;
+      color: #333;
+    }
+
+    .pattern-description em {
+      color: #f566ca;
+      font-style: italic;
+    }
+
+    /* ==============================
+       FOOTER
+    ============================== */
+    .footer {
+      text-align: center;
+      padding: 30px 0;
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* ==============================
+       📱 MOBILE RESPONSIVE
+    ============================== */
+    @media (max-width: 600px) {
+
+      .header {
+        font-size: 1.8rem;
+        padding: 15px;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px;
+      }
+
+      .menu a {
+        display: block;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .pattern-description {
+        padding: 20px;
+        font-size: 16px;
+        border-radius: 15px;
+      }
+
+      .box {
+        margin-bottom: 18px;
+        padding: 0 10px;
+      }
+
+      .footer {
+        font-size: 12px;
+        padding: 20px;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>ABOUT YOU</h1>
+  <!-- HEADER -->
+  <div class="header">
+    ABOUT HER
+  </div>
 
-    <!-- Image -->
-    <img src="about-you.jpg" alt="Song Image">
+  <!-- ✅ FIXED NAVIGATION MENU -->
+  <nav class="menu">
+    <a href="Musiclyrics.html">Musiclyrics</a>
+    <a href="Cutiepie.html">Gallery</a>
+    <a href="letter.html">Letter</a>
+    <a href="love1.html">💙</a>
+    <a href="scanme.html">SCAN ME</a>
+  </nav>
 
-    <!-- Music Player -->
-    <audio controls>
-        <source src="aboutyou.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+  <!-- LETTER / TEXT -->
+  <div class="box">
+    <section class="pattern-description">
+      She looks like something poet write about
+    </section>
+  </div>
 
-    <!-- Lyrics -->
-    <div class="lyrics">
-       I know a place
-It's somewhere I go when I need to remember your face
-We get married in our heads
-Something to do whilst we try to recall how we met
-
-Do you think I have forgotten?
-Do you think I have forgotten?
-Do you think I have forgotten about you?
-
-You and I
-Were alive
-With nothing to do I could lay and just look in your eyes
-Wait and pretend
-Hold on and hope that we'll find our way back in the end
-
-Do you think I have forgotten?
-Do you think I have forgotten?
-Do you think I have forgotten about you?
-Do you think I have forgotten?
-Do you think I have forgotten?
-Do you think I have forgotten about you?
-
-There was something about you that now I can't remember
-It's the same damn thing that made my heart surrender
-And I'll miss you on a train
-I'll miss you in the morning
-I never know what to think about, so think about you
-(I think about you)
-About you
-Do you think I have forgotten about you?
-About you
-About you
-Do you think I have forgotten about you?
-
-
-    </div>
-</div>
+  <!-- FOOTER -->
+  <div class="footer">
+    &copy; WLW
+  </div>
 
 </body>
 </html>
